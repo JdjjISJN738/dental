@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Dentrist — A Calmer Kind of Dental Care</title>
+  <link rel="icon" type="image/png" href="images/dentrist-logo.png" />
+  
+  <!-- Web Fonts specified by Design System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Wix+Madefor+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Native CSS Stack with Smooth Scrolling & Image Animations -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="brand-logo" data-navigate="home" aria-label="Dentrist Home">
+        <img src="images/dentrist-logo.png" class="brand-logo-img" alt="Dentrist" />
+      </button>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <button class="nav-item active" data-navigate="home">Home</button>
+        <button class="nav-item" data-navigate="about">About</button>
+        <button class="nav-item" data-navigate="services">Services</button>
+        <button class="nav-item" data-navigate="pediatric">Pediatric Dentistry</button>
+        <button class="nav-item" data-navigate="contact">Contact</button>
+        <button class="nav-item" data-navigate="journey">Smile Journey</button>
+      </nav>
+
+      <div class="nav-right">
+        <button class="btn-primary" data-book>Book Now</button>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open mobile menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modern Mobile Navigation Drawer matching Design Reference -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div class="mobile-nav-panel">
+      <!-- Drawer Header with Logo & Close Button -->
+      <div class="mobile-nav-header">
+        <div class="brand-logo">
+          <img src="images/dentrist-logo.png" class="brand-logo-img" alt="Dentrist" />
+        </div>
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+      </div>
+
+      <!-- Section Label -->
+      <div class="mobile-nav-section-title">EXPLORE DENTRIST</div>
+
+      <!-- Navigation Links with chevron indicators -->
+      <nav class="mobile-nav-list">
+        <button class="mobile-nav-link" data-navigate="home">
+          <span>Home</span>
+          <span class="arrow">›</span>
+        </button>
+        <button class="mobile-nav-link" data-navigate="about">
+          <span>About</span>
+          <span class="arrow">›</span>
+        </button>
+        <button class="mobile-nav-link" data-navigate="services">
+          <span>Services</span>
+          <span class="arrow">›</span>
+        </button>
+        <button class="mobile-nav-link" data-navigate="pediatric">
+          <span>Pediatric Dentistry</span>
+          <span class="arrow">›</span>
+        </button>
+        <button class="mobile-nav-link" data-navigate="contact">
+          <span>Contact</span>
+          <span class="arrow">›</span>
+        </button>
+        <button class="mobile-nav-link" data-navigate="journey">
+          <span>Smile Journey</span>
+          <span class="arrow">›</span>
+        </button>
+      </nav>
+
+      <!-- Drawer Bottom CTA & Tagline -->
+      <div class="mobile-nav-footer">
+        <button class="btn-primary" style="width: 100%; min-height: 48px;" data-book>Book an appointment</button>
+        <p class="tagline">Gentle care. Confident smiles.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main View Container -->
+  <main id="mainContent"></main>
+
+  <!-- Site Footer (from Design System) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <button class="brand-logo" data-navigate="home" style="margin-bottom: 12px;">
+            <img src="images/dentrist-logo.png" class="brand-logo-img" alt="Dentrist" />
+          </button>
+          <p class="text-muted" style="font-size: 14px; max-width: 320px;">
+            Soft blue, generous white space and purposeful teal. A calmer kind of dental care.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px;">
+          <div>
+            <strong style="display: block; margin-bottom: 8px;">Explore</strong>
+            <button style="display: block; padding: 4px 0; color: var(--color-secondary-text);" data-navigate="home">Home</button>
+            <button style="display: block; padding: 4px 0; color: var(--color-secondary-text);" data-navigate="about">About</button>
+            <button style="display: block; padding: 4px 0; color: var(--color-secondary-text);" data-navigate="services">Services</button>
+          </div>
+          <div>
+            <strong style="display: block; margin-bottom: 8px;">Care</strong>
+            <button style="display: block; padding: 4px 0; color: var(--color-secondary-text);" data-navigate="pediatric">Pediatric Dentistry</button>
+            <button style="display: block; padding: 4px 0; color: var(--color-secondary-text);" data-navigate="journey">Smile Journey</button>
+            <button style="display: block; padding: 4px 0; color: var(--color-secondary-text);" data-navigate="contact">Contact</button>
+          </div>
+        </div>
+
+        <div style="font-size: 14px; color: var(--color-secondary-text);">
+          <strong style="display: block; color: var(--color-ink); margin-bottom: 8px;">Clinic Location</strong>
+          123 Smile Street, San Francisco, CA 94110<br>
+          info@dentristclinic.com<br>
+          (123) 456-7890
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Dentrist Clinic. All rights reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: inherit;">Privacy Policy</a>
+          <a href="#" style="color: inherit;">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog Host -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div id="modalContainer"></div>
+  </div>
+
+  <!-- Vanilla JavaScript Application -->
+  <script src="js/app.js"></script>
+</body>
+</html>
